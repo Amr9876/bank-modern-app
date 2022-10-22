@@ -3,7 +3,10 @@ import styles from "../styles";
 
 const Clients = () => (
   <section className={`${styles.flexCenter} my-4`}>
-    <div className={`${styles.flexCenter} flex-wrap w-full`}>
+    <div
+      data-aos="fade-right"
+      className={`${styles.flexCenter} flex-wrap w-full`}
+    >
       {clients.map((client) => (
         <div
           key={client.id}
